@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s25csga225-1" LaunchTime="1643382145">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="sdcard_interface.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="sdcard_interface.ltx"/>
+  <File Type="BG-BGN" Name="sdcard_interface.bgn"/>
+  <File Type="RNPI_FILE" Name="sdcard_interface.rnpi"/>
+  <File Type="BG-DRC" Name="sdcard_interface.drc"/>
+  <File Type="CFI_FILE" Name="sdcard_interface.cfi"/>
+  <File Type="RCFI_FILE" Name="sdcard_interface.rcfi"/>
+  <File Type="BITSTR-MMI" Name="sdcard_interface.mmi"/>
+  <File Type="BITSTR-BMM" Name="sdcard_interface_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="sdcard_interface.nky"/>
+  <File Type="BITSTR-RBT" Name="sdcard_interface.rbt"/>
+  <File Type="RBD_FILE" Name="sdcard_interface.rbd"/>
+  <File Type="BITSTR-MSK" Name="sdcard_interface.msk"/>
+  <File Type="NPI_FILE" Name="sdcard_interface.npi"/>
+  <File Type="BG-BIN" Name="sdcard_interface.bin"/>
+  <File Type="PDI-FILE" Name="sdcard_interface.pdi"/>
+  <File Type="BG-BIT" Name="sdcard_interface.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="sdcard_interface_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="sdcard_interface_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="sdcard_interface_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="sdcard_interface_timing_summary_postroute_physopted.rpx"/>
+  <File Type="RDI-RDI" Name="sdcard_interface.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="sdcard_interface_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="sdcard_interface_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sdcard_interface_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="sdcard_interface_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="sdcard_interface_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="sdcard_interface_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="sdcard_interface_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="sdcard_interface_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="sdcard_interface_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="sdcard_interface_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="sdcard_interface_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="sdcard_interface_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="sdcard_interface_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="sdcard_interface_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="sdcard_interface_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sdcard_interface_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sdcard_interface_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="sdcard_interface_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="sdcard_interface_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="sdcard_interface_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="sdcard_interface_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="sdcard_interface_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="sdcard_interface_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="sdcard_interface_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="sdcard_interface_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="sdcard_interface_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="sdcard_interface_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="sdcard_interface_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="sdcard_interface_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="sdcard_interface_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="sdcard_interface_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="sdcard_interface_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="sdcard_interface_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="sdcard_interface_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="sdcard_interface_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="sdcard_interface_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="sdcard_interface_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="sdcard_interface_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="sdcard_interface_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="sdcard_interface_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="sdcard_interface_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="sdcard_interface_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="sdcard_interface.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="sdcard_interface_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="sdcard_interface_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="sdcard_interface_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="sdcard_interface_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="sdcard_interface_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="sdcard_interface_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="sdcard_interface_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="sdcard_interface.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/SDCARD/baud_generator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDCARD/baud_generator.v"/>
+        <Attr Name="ImportTime" Val="1617940632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SDCARD/debounce_explicit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDCARD/debounce_explicit.v"/>
+        <Attr Name="ImportTime" Val="1624091151"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SDCARD/fifo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDCARD/fifo.v"/>
+        <Attr Name="ImportTime" Val="1617952932"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SDCARD/spi.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDCARD/spi.v"/>
+        <Attr Name="ImportTime" Val="1643177351"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SDCARD/uart.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDCARD/uart.v"/>
+        <Attr Name="ImportTime" Val="1624940816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SDCARD/uart_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDCARD/uart_rx.v"/>
+        <Attr Name="ImportTime" Val="1617940511"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SDCARD/uart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDCARD/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1617959164"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SDCARD/sdcard_interface.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDCARD/sdcard_interface.v"/>
+        <Attr Name="ImportTime" Val="1643370741"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="sdcard_interface"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/digilent-xdc-master/Cmod-S7-25-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/Compressed/digilent-xdc-master/Cmod-S7-25-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1643338089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/sdcard_interface.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

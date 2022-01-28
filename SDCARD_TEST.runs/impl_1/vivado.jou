@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Jan 28 23:06:13 2022
+# Process ID: 64649
+# Current directory: /home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.runs/impl_1
+# Command line: vivado -log sdcard_interface.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sdcard_interface.tcl -notrace
+# Log file: /home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.runs/impl_1/sdcard_interface.vdi
+# Journal file: /home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.runs/impl_1/vivado.jou
+# Running On: angelo-desktop, OS: Linux, CPU Frequency: 2994.492 MHz, CPU Physical cores: 2, Host memory: 7797 MB
+#-----------------------------------------------------------
+source sdcard_interface.tcl -notrace

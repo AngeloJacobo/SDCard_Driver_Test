@@ -1,0 +1,385 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Jan 28 23:02:36 2022
+# Process ID: 63605
+# Current directory: /home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.runs/synth_1
+# Command line: vivado -log sdcard_interface.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sdcard_interface.tcl
+# Log file: /home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.runs/synth_1/sdcard_interface.vds
+# Journal file: /home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.runs/synth_1/vivado.jou
+# Running On: angelo-desktop, OS: Linux, CPU Frequency: 2994.481 MHz, CPU Physical cores: 2, Host memory: 7797 MB
+#-----------------------------------------------------------
+source sdcard_interface.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 2601.160 ; gain = 0.023 ; free physical = 765 ; free virtual = 18837
+Command: read_checkpoint -auto_incremental -incremental /home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/utils_1/imports/synth_1/sdcard_interface.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/utils_1/imports/synth_1/sdcard_interface.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top sdcard_interface -part xc7s25csga225-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 64022
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:29 . Memory (MB): peak = 2601.238 ; gain = 0.000 ; free physical = 1098 ; free virtual = 18537
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sdcard_interface' [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/sdcard_interface.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/sdcard_interface.v:157]
+INFO: [Synth 8-6157] synthesizing module 'spi' [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/spi.v:3]
+	Parameter HI_FREQ_DIV bound to: 2 - type: integer 
+	Parameter LO_FREQ_DIV bound to: 30 - type: integer 
+	Parameter SPI_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'spi' (1#1) [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/spi.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart' [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/uart.v:3]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter DVSR bound to: 78 - type: integer 
+	Parameter DVSR_WIDTH bound to: 9 - type: integer 
+	Parameter FIFO_W bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_generator' [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/baud_generator.v:3]
+	Parameter N bound to: 78 - type: integer 
+	Parameter N_width bound to: 9 - type: integer 
+WARNING: [Synth 8-7137] Register s_tick_reg in module baud_generator has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/baud_generator.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'baud_generator' (2#1) [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/baud_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/uart_rx.v:21]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/uart_rx.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/uart_rx.v:21]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/fifo.v:3]
+	Parameter W bound to: 10 - type: integer 
+	Parameter B bound to: 8 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/fifo.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (4#1) [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/fifo.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/uart_tx.v:3]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/uart_tx.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (5#1) [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/uart_tx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (6#1) [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/uart.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debounce_explicit' [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/debounce_explicit.v:3]
+INFO: [Synth 8-226] default block is never used [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/debounce_explicit.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'debounce_explicit' (7#1) [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/debounce_explicit.v:3]
+WARNING: [Synth 8-3848] Net uart_rx in module/entity sdcard_interface does not have driver. [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/sdcard_interface.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'sdcard_interface' (8#1) [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/sources_1/imports/SDCARD/sdcard_interface.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 2601.238 ; gain = 0.000 ; free physical = 1099 ; free virtual = 18581
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:39 . Memory (MB): peak = 2601.238 ; gain = 0.000 ; free physical = 1083 ; free virtual = 18571
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:39 . Memory (MB): peak = 2601.238 ; gain = 0.000 ; free physical = 1083 ; free virtual = 18571
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2601.238 ; gain = 0.000 ; free physical = 1068 ; free virtual = 18558
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/constrs_1/imports/digilent-xdc-master/Cmod-S7-25-Master.xdc]
+Finished Parsing XDC File [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/constrs_1/imports/digilent-xdc-master/Cmod-S7-25-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.srcs/constrs_1/imports/digilent-xdc-master/Cmod-S7-25-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sdcard_interface_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sdcard_interface_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2617.168 ; gain = 0.000 ; free physical = 944 ; free virtual = 18458
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2617.168 ; gain = 0.000 ; free physical = 944 ; free virtual = 18458
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 997 ; free virtual = 18525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 997 ; free virtual = 18525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 997 ; free virtual = 18525
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'spi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'debounce_explicit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+                   WRITE |                            01000 |                              001
+                    HOLD |                            00010 |                              100
+                    READ |                            00100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'one-hot' in module 'spi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                  delay0 |                               01 |                               01
+                     one |                               10 |                               10
+                  delay1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'debounce_explicit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:01:02 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 955 ; free virtual = 18491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 10    
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               56 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 11    
++---RAMs : 
+	               8K Bit	(1024 X 8 bit)          RAMs := 2     
++---Muxes : 
+	  10 Input   56 Bit        Muxes := 1     
+	  11 Input   56 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	  11 Input   16 Bit        Muxes := 1     
+	  11 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 7     
+	   4 Input    8 Bit        Muxes := 3     
+	  11 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 14    
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	  11 Input    3 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 41    
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 35    
+	  11 Input    1 Bit        Muxes := 13    
+	  10 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6014] Unused sequential element m1/m2/array_reg_reg was removed. 
+WARNING: [Synth 8-3332] Sequential element (m0/FSM_onehot_state_q_reg[1]) is unused and will be removed from module sdcard_interface.
+WARNING: [Synth 8-3332] Sequential element (m1/m1/FSM_sequential_state_reg_reg[1]) is unused and will be removed from module sdcard_interface.
+WARNING: [Synth 8-3332] Sequential element (m1/m1/FSM_sequential_state_reg_reg[0]) is unused and will be removed from module sdcard_interface.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 894 ; free virtual = 18466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------+---------------------+-----------+----------------------+--------------+
+|Module Name      | RTL Object          | Inference | Size (Depth x Width) | Primitives   | 
++-----------------+---------------------+-----------+----------------------+--------------+
+|sdcard_interface | m1/m4/array_reg_reg | Implied   | 1 K x 8              | RAM64M x 48  | 
++-----------------+---------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:29 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 762 ; free virtual = 18347
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:33 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 747 ; free virtual = 18334
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------+---------------------+-----------+----------------------+--------------+
+|Module Name      | RTL Object          | Inference | Size (Depth x Width) | Primitives   | 
++-----------------+---------------------+-----------+----------------------+--------------+
+|sdcard_interface | m1/m4/array_reg_reg | Implied   | 1 K x 8              | RAM64M x 48  | 
++-----------------+---------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:34 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 747 ; free virtual = 18334
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:49 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 765 ; free virtual = 18340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:49 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 765 ; free virtual = 18340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:49 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 765 ; free virtual = 18341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:49 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 765 ; free virtual = 18341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:49 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 765 ; free virtual = 18341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:49 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 765 ; free virtual = 18341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    18|
+|3     |LUT1   |     5|
+|4     |LUT2   |    61|
+|5     |LUT3   |    43|
+|6     |LUT4   |    94|
+|7     |LUT5   |    93|
+|8     |LUT6   |   169|
+|9     |MUXF7  |    15|
+|10    |RAM64M |    48|
+|11    |FDCE   |   231|
+|12    |FDPE   |     2|
+|13    |FDRE   |     1|
+|14    |IBUF   |     4|
+|15    |OBUF   |     8|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:49 . Memory (MB): peak = 2617.168 ; gain = 15.930 ; free physical = 765 ; free virtual = 18341
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:42 . Memory (MB): peak = 2617.168 ; gain = 0.000 ; free physical = 816 ; free virtual = 18392
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:50 . Memory (MB): peak = 2617.176 ; gain = 15.930 ; free physical = 816 ; free virtual = 18392
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2617.176 ; gain = 0.000 ; free physical = 801 ; free virtual = 18381
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2617.176 ; gain = 0.000 ; free physical = 840 ; free virtual = 18423
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 48 instances
+
+Synth Design complete, checksum: 60c329e0
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:02:09 . Memory (MB): peak = 2617.176 ; gain = 16.016 ; free physical = 1047 ; free virtual = 18631
+INFO: [Common 17-1381] The checkpoint '/home/angelo/Desktop/SDCARD_TEST/SDCARD_TEST.runs/synth_1/sdcard_interface.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sdcard_interface_utilization_synth.rpt -pb sdcard_interface_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 28 23:06:02 2022...
